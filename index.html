@@ -1150,6 +1150,12 @@ let pendingStep = 1;
 let sendQueue   = [];
 let sendIdx     = 0;
 
+// ── 헬퍼 ────────────────────────────────────────────────────────────────────
+const getMonth   = () => document.getElementById('selMonth').value;
+const getIssue   = () => document.getElementById('inpIssue').value   || '(미입력)';
+const getPayment = () => document.getElementById('inpPayment').value || '(미입력)';
+const sigEnabled = () => document.getElementById('chkSig').checked;
+
 // ── 초기화 ───────────────────────────────────────────────────────────────────
 (function init() {
   const now = new Date();
