@@ -1187,12 +1187,6 @@ const sigEnabled = () => document.getElementById('chkSig').checked;
   });
 })();
 
-// ── 헬퍼 ────────────────────────────────────────────────────────────────────
-const getMonth   = () => document.getElementById('selMonth').value;
-const getIssue   = () => document.getElementById('inpIssue').value   || '(미입력)';
-const getPayment = () => document.getElementById('inpPayment').value || '(미입력)';
-const sigEnabled = () => document.getElementById('chkSig').checked;
-
 function fmt(n) { return Number(n).toLocaleString('ko-KR'); }
 
 function esc(str) {
