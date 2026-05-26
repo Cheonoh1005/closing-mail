@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<!-- saved from url=(0049)file:///C:/Users/Cowintech/Downloads/index_1.html -->
-<html lang="ko"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>매입 마감 메일 발송 툴 - 코윈테크</title>
 <style>
@@ -781,7 +781,7 @@ body {
     <div class="settings-grid">
       <div class="field">
         <label>마감 월</label>
-        <select id="selMonth"><option value="1">1월</option><option value="2">2월</option><option value="3">3월</option><option value="4">4월</option><option value="5">5월</option><option value="6">6월</option><option value="7">7월</option><option value="8">8월</option><option value="9">9월</option><option value="10">10월</option><option value="11">11월</option><option value="12">12월</option></select>
+        <select id="selMonth"></select>
       </div>
       <div class="field">
         <label>발행 일자</label>
@@ -799,7 +799,7 @@ body {
     <div class="sig-row">
       <span class="sig-row-label">서명</span>
       <label class="toggle">
-        <input type="checkbox" id="chkSig" checked="" onchange="onSigToggle()">
+        <input type="checkbox" id="chkSig" checked onchange="onSigToggle()">
         <span class="toggle-track"></span>
       </label>
       <span class="sig-hint" id="sigHint">
@@ -838,295 +838,13 @@ body {
         </div>
       </div>
 
-      <div class="vendor-grid" id="grid1">
-    <label class="vendor-card" id="vc0">
-      <input type="checkbox" id="c1_0" onchange="onChk1(0)">
-      <div>
-        <div class="vn">한국 미스미</div>
-        <div class="vs">문병준 · bj.s02r.moon@misumi.co.kr</div>
-      </div>
-    </label>
-  
-    <label class="vendor-card" id="vc1">
-      <input type="checkbox" id="c1_1" onchange="onChk1(1)">
-      <div>
-        <div class="vn">오성오토메이션</div>
-        <div class="vs">박준영 · jypark@osungfa.net</div>
-      </div>
-    </label>
-  
-    <label class="vendor-card" id="vc2">
-      <input type="checkbox" id="c1_2" onchange="onChk1(2)">
-      <div>
-        <div class="vn">태광베어링</div>
-        <div class="vs">김병이 · 01096313248@nate.com</div>
-      </div>
-    </label>
-  
-    <label class="vendor-card" id="vc3">
-      <input type="checkbox" id="c1_3" onchange="onChk1(3)">
-      <div>
-        <div class="vn">유피스</div>
-        <div class="vs">이정은 · ufis0708@naver.com</div>
-      </div>
-    </label>
-  
-    <label class="vendor-card" id="vc4">
-      <input type="checkbox" id="c1_4" onchange="onChk1(4)">
-      <div>
-        <div class="vn">우성정공</div>
-        <div class="vs">진동한 · woosung4141@hanmail.net</div>
-      </div>
-    </label>
-  
-    <label class="vendor-card" id="vc5">
-      <input type="checkbox" id="c1_5" onchange="onChk1(5)">
-      <div>
-        <div class="vn">한국이구스</div>
-        <div class="vs">이지혜 · jilee@igus.net</div>
-      </div>
-    </label>
-  
-    <label class="vendor-card" id="vc6">
-      <input type="checkbox" id="c1_6" onchange="onChk1(6)">
-      <div>
-        <div class="vn">티오지(TOG)</div>
-        <div class="vs">손성환 · togfa@togfa.co.kr</div>
-      </div>
-    </label>
-  
-    <label class="vendor-card" id="vc7">
-      <input type="checkbox" id="c1_7" onchange="onChk1(7)">
-      <div>
-        <div class="vn">삼익상공사</div>
-        <div class="vs">최진서 · samick1213@hanmail.net</div>
-      </div>
-    </label>
-  
-    <label class="vendor-card" id="vc8">
-      <input type="checkbox" id="c1_8" onchange="onChk1(8)">
-      <div>
-        <div class="vn">봉신로드셀</div>
-        <div class="vs">강용식 · kys@bongshin.com</div>
-      </div>
-    </label>
-  
-    <label class="vendor-card" id="vc9">
-      <input type="checkbox" id="c1_9" onchange="onChk1(9)">
-      <div>
-        <div class="vn">코펙스코리아</div>
-        <div class="vs">정택근 · cofacs@cofacs.co.kr</div>
-      </div>
-    </label>
-  
-    <label class="vendor-card" id="vc10">
-      <input type="checkbox" id="c1_10" onchange="onChk1(10)">
-      <div>
-        <div class="vn">흥진에이티</div>
-        <div class="vs">김문호 · kknd8681@atg21.co.kr</div>
-      </div>
-    </label>
-  
-    <label class="vendor-card" id="vc11">
-      <input type="checkbox" id="c1_11" onchange="onChk1(11)">
-      <div>
-        <div class="vn">에프에이코리아</div>
-        <div class="vs">손경승 · gsson@fakorea.deplay.co.kr</div>
-      </div>
-    </label>
-  
-    <label class="vendor-card" id="vc12">
-      <input type="checkbox" id="c1_12" onchange="onChk1(12)">
-      <div>
-        <div class="vn">우성시스템</div>
-        <div class="vs">박성철 · wscarving@hanmail.net</div>
-      </div>
-    </label>
-  
-    <label class="vendor-card" id="vc13">
-      <input type="checkbox" id="c1_13" onchange="onChk1(13)">
-      <div>
-        <div class="vn">건일바퀴 프로파일</div>
-        <div class="vs">김미경 · ljhgunil@naver.com</div>
-      </div>
-    </label>
-  
-    <label class="vendor-card" id="vc14">
-      <input type="checkbox" id="c1_14" onchange="onChk1(14)">
-      <div>
-        <div class="vn">대단</div>
-        <div class="vs">최재훈 · cjh@daedanhan.com</div>
-      </div>
-    </label>
-  
-    <label class="vendor-card" id="vc15">
-      <input type="checkbox" id="c1_15" onchange="onChk1(15)">
-      <div>
-        <div class="vn">삼원에프에이</div>
-        <div class="vs">미정 · krkim@samwonfa.com</div>
-      </div>
-    </label>
-  
-    <label class="vendor-card" id="vc16">
-      <input type="checkbox" id="c1_16" onchange="onChk1(16)">
-      <div>
-        <div class="vn">성헌</div>
-        <div class="vs">이성웅 · shc@sunghun.com</div>
-      </div>
-    </label>
-  
-    <label class="vendor-card" id="vc17">
-      <input type="checkbox" id="c1_17" onchange="onChk1(17)">
-      <div>
-        <div class="vn">알파테크</div>
-        <div class="vs">이희주 · hjlee@alphatec.kr</div>
-      </div>
-    </label>
-  
-    <label class="vendor-card" id="vc18">
-      <input type="checkbox" id="c1_18" onchange="onChk1(18)">
-      <div>
-        <div class="vn">에이치비모션</div>
-        <div class="vs">이순일 · sales@hbmotion.cafe24.com</div>
-      </div>
-    </label>
-  
-    <label class="vendor-card" id="vc19">
-      <input type="checkbox" id="c1_19" onchange="onChk1(19)">
-      <div>
-        <div class="vn">영광테크</div>
-        <div class="vs">이정은 · yk@yktec.co.kr</div>
-      </div>
-    </label>
-  
-    <label class="vendor-card" id="vc20">
-      <input type="checkbox" id="c1_20" onchange="onChk1(20)">
-      <div>
-        <div class="vn">우일산업</div>
-        <div class="vs">안정현 · webmaster@wooilcaster.co.kr</div>
-      </div>
-    </label>
-  
-    <label class="vendor-card" id="vc21">
-      <input type="checkbox" id="c1_21" onchange="onChk1(21)">
-      <div>
-        <div class="vn">원솔루션</div>
-        <div class="vs">조원제 · wonsts@naver.com</div>
-      </div>
-    </label>
-  
-    <label class="vendor-card" id="vc22">
-      <input type="checkbox" id="c1_22" onchange="onChk1(22)">
-      <div>
-        <div class="vn">유진특수베어링</div>
-        <div class="vs">유춘혁 · yjsb21@naver.com</div>
-      </div>
-    </label>
-  
-    <label class="vendor-card" id="vc23">
-      <input type="checkbox" id="c1_23" onchange="onChk1(23)">
-      <div>
-        <div class="vn">이비시스템</div>
-        <div class="vs">윤민정 · ebsystem11@naver.com</div>
-      </div>
-    </label>
-  
-    <label class="vendor-card" id="vc24">
-      <input type="checkbox" id="c1_24" onchange="onChk1(24)">
-      <div>
-        <div class="vn">티에스코리아</div>
-        <div class="vs">백선희 · tskorea@tskorea.kr</div>
-      </div>
-    </label>
-  
-    <label class="vendor-card" id="vc25">
-      <input type="checkbox" id="c1_25" onchange="onChk1(25)">
-      <div>
-        <div class="vn">한국엔에스케이</div>
-        <div class="vs">오경민 · oh-k@nsk.com</div>
-      </div>
-    </label>
-  
-    <label class="vendor-card" id="vc26">
-      <input type="checkbox" id="c1_26" onchange="onChk1(26)">
-      <div>
-        <div class="vn">한신체인</div>
-        <div class="vs">한상운 · info@hanshinchain.com</div>
-      </div>
-    </label>
-  
-    <label class="vendor-card" id="vc27">
-      <input type="checkbox" id="c1_27" onchange="onChk1(27)">
-      <div>
-        <div class="vn">정지원</div>
-        <div class="vs">정지원 · jw@cowintech.com</div>
-      </div>
-    </label>
-  
-    <label class="vendor-card" id="vc28">
-      <input type="checkbox" id="c1_28" onchange="onChk1(28)">
-      <div>
-        <div class="vn">test</div>
-        <div class="vs">test · cheonohp@cowintech.com</div>
-      </div>
-    </label>
-  </div>
+      <div class="vendor-grid" id="grid1"></div>
 
       <div class="mail-preview">
         <div class="preview-hd">메일 미리보기</div>
-        <div class="mail-subject" id="prev1Sub">[5월 마감] 거래명세서 송부 요청 - 코윈테크</div>
-        <div class="mail-body" id="prev1Body">문병준 담당자님,
-
-안녕하세요
-구매팀 박천오 선임입니다.
-
-5월 매입 마감 진행하려 합니다.
-
-당월 코윈테크 마감 건 거래명세서 송부 부탁드립니다.
-
-감사합니다.
-박천오 드림</div>
-        <div id="prev1Sig"><div class="sig-preview-area"><table cellpadding="0" cellspacing="0" border="0" style="font-family:&#39;Malgun Gothic&#39;,Arial,sans-serif;font-size:12px;color:#444;
-         margin-top:20px;padding-top:16px;border-top:2px solid #1a237e;
-         width:100%;max-width:520px;">
-  <tbody><tr><td>
-    <div style="font-size:15px;font-weight:700;color:#1a237e;margin-bottom:3px;letter-spacing:-0.2px;">
-      박천오 / Cheonoh Park
-    </div>
-    <div style="font-size:12px;color:#666;margin-bottom:14px;">구매팀 / 선임</div>
-    <table cellpadding="0" cellspacing="0" border="0" style="font-size:12px;color:#444;border-collapse:collapse;line-height:2.1;">
-      <tbody><tr>
-        <td style="color:#999;padding-right:12px;font-weight:600;width:20px;white-space:nowrap;">M.</td>
-        <td>010-3551-2643</td>
-      </tr>
-      <tr>
-        <td style="color:#999;padding-right:12px;font-weight:600;">T.</td>
-        <td>070-4944-3029</td>
-      </tr>
-      <tr>
-        <td style="color:#999;padding-right:12px;font-weight:600;">F.</td>
-        <td>041-547-2132</td>
-      </tr>
-      <tr>
-        <td style="color:#999;padding-right:12px;font-weight:600;vertical-align:top;">A.</td>
-        <td>충남 아산시 둔포면 아산밸리로 285</td>
-      </tr>
-      <tr>
-        <td style="color:#999;padding-right:12px;font-weight:600;">H.</td>
-        <td><a href="http://www.cowintech.com/" style="color:#1a237e;text-decoration:none;font-weight:500;">www.cowintech.com</a></td>
-      </tr>
-    </tbody></table>
-    <div style="margin-top:14px;">
-      <span style="display:inline-block;background:#1a237e;color:#fff;padding:4px 11px;
-                   border-radius:3px;font-size:11px;font-weight:700;letter-spacing:0.8px;">
-        COWIN TECH
-      </span>
-      <span style="font-size:11px;color:#888;margin-left:8px;">
-        Smart Factory System | Cowork + Win Win
-      </span>
-    </div>
-  </td></tr>
-</tbody></table></div></div>
+        <div class="mail-subject" id="prev1Sub">─</div>
+        <div class="mail-body"    id="prev1Body">─</div>
+        <div id="prev1Sig"></div>
       </div>
 
       <div class="send-bar">
@@ -1164,302 +882,12 @@ body {
               <th style="width:60px; text-align:center">발송</th>
             </tr>
           </thead>
-          <tbody id="tbody2">
-      <tr>
-        <td><strong>한국 미스미</strong></td>
-        <td>문병준</td>
-        <td>
-          <input type="text" class="amt-input" id="a_0" value="" placeholder="0" oninput="onAmt(0)" onfocus="this.select()">
-        </td>
-        <td style="text-align:center">
-          <input type="checkbox" class="chk-send" id="c2_0" onchange="onChk2(0)">
-        </td>
-      </tr>
-      <tr>
-        <td><strong>오성오토메이션</strong></td>
-        <td>박준영</td>
-        <td>
-          <input type="text" class="amt-input" id="a_1" value="" placeholder="0" oninput="onAmt(1)" onfocus="this.select()">
-        </td>
-        <td style="text-align:center">
-          <input type="checkbox" class="chk-send" id="c2_1" onchange="onChk2(1)">
-        </td>
-      </tr>
-      <tr>
-        <td><strong>태광베어링</strong></td>
-        <td>김병이</td>
-        <td>
-          <input type="text" class="amt-input" id="a_2" value="" placeholder="0" oninput="onAmt(2)" onfocus="this.select()">
-        </td>
-        <td style="text-align:center">
-          <input type="checkbox" class="chk-send" id="c2_2" onchange="onChk2(2)">
-        </td>
-      </tr>
-      <tr>
-        <td><strong>유피스</strong></td>
-        <td>이정은</td>
-        <td>
-          <input type="text" class="amt-input" id="a_3" value="" placeholder="0" oninput="onAmt(3)" onfocus="this.select()">
-        </td>
-        <td style="text-align:center">
-          <input type="checkbox" class="chk-send" id="c2_3" onchange="onChk2(3)">
-        </td>
-      </tr>
-      <tr>
-        <td><strong>우성정공</strong></td>
-        <td>진동한</td>
-        <td>
-          <input type="text" class="amt-input" id="a_4" value="" placeholder="0" oninput="onAmt(4)" onfocus="this.select()">
-        </td>
-        <td style="text-align:center">
-          <input type="checkbox" class="chk-send" id="c2_4" onchange="onChk2(4)">
-        </td>
-      </tr>
-      <tr>
-        <td><strong>한국이구스</strong></td>
-        <td>이지혜</td>
-        <td>
-          <input type="text" class="amt-input" id="a_5" value="" placeholder="0" oninput="onAmt(5)" onfocus="this.select()">
-        </td>
-        <td style="text-align:center">
-          <input type="checkbox" class="chk-send" id="c2_5" onchange="onChk2(5)">
-        </td>
-      </tr>
-      <tr>
-        <td><strong>티오지(TOG)</strong></td>
-        <td>손성환</td>
-        <td>
-          <input type="text" class="amt-input" id="a_6" value="" placeholder="0" oninput="onAmt(6)" onfocus="this.select()">
-        </td>
-        <td style="text-align:center">
-          <input type="checkbox" class="chk-send" id="c2_6" onchange="onChk2(6)">
-        </td>
-      </tr>
-      <tr>
-        <td><strong>삼익상공사</strong></td>
-        <td>최진서</td>
-        <td>
-          <input type="text" class="amt-input" id="a_7" value="" placeholder="0" oninput="onAmt(7)" onfocus="this.select()">
-        </td>
-        <td style="text-align:center">
-          <input type="checkbox" class="chk-send" id="c2_7" onchange="onChk2(7)">
-        </td>
-      </tr>
-      <tr>
-        <td><strong>봉신로드셀</strong></td>
-        <td>강용식</td>
-        <td>
-          <input type="text" class="amt-input" id="a_8" value="" placeholder="0" oninput="onAmt(8)" onfocus="this.select()">
-        </td>
-        <td style="text-align:center">
-          <input type="checkbox" class="chk-send" id="c2_8" onchange="onChk2(8)">
-        </td>
-      </tr>
-      <tr>
-        <td><strong>코펙스코리아</strong></td>
-        <td>정택근</td>
-        <td>
-          <input type="text" class="amt-input" id="a_9" value="" placeholder="0" oninput="onAmt(9)" onfocus="this.select()">
-        </td>
-        <td style="text-align:center">
-          <input type="checkbox" class="chk-send" id="c2_9" onchange="onChk2(9)">
-        </td>
-      </tr>
-      <tr>
-        <td><strong>흥진에이티</strong></td>
-        <td>김문호</td>
-        <td>
-          <input type="text" class="amt-input" id="a_10" value="" placeholder="0" oninput="onAmt(10)" onfocus="this.select()">
-        </td>
-        <td style="text-align:center">
-          <input type="checkbox" class="chk-send" id="c2_10" onchange="onChk2(10)">
-        </td>
-      </tr>
-      <tr>
-        <td><strong>에프에이코리아</strong></td>
-        <td>손경승</td>
-        <td>
-          <input type="text" class="amt-input" id="a_11" value="" placeholder="0" oninput="onAmt(11)" onfocus="this.select()">
-        </td>
-        <td style="text-align:center">
-          <input type="checkbox" class="chk-send" id="c2_11" onchange="onChk2(11)">
-        </td>
-      </tr>
-      <tr>
-        <td><strong>우성시스템</strong></td>
-        <td>박성철</td>
-        <td>
-          <input type="text" class="amt-input" id="a_12" value="" placeholder="0" oninput="onAmt(12)" onfocus="this.select()">
-        </td>
-        <td style="text-align:center">
-          <input type="checkbox" class="chk-send" id="c2_12" onchange="onChk2(12)">
-        </td>
-      </tr>
-      <tr>
-        <td><strong>건일바퀴 프로파일</strong></td>
-        <td>김미경</td>
-        <td>
-          <input type="text" class="amt-input" id="a_13" value="" placeholder="0" oninput="onAmt(13)" onfocus="this.select()">
-        </td>
-        <td style="text-align:center">
-          <input type="checkbox" class="chk-send" id="c2_13" onchange="onChk2(13)">
-        </td>
-      </tr>
-      <tr>
-        <td><strong>대단</strong></td>
-        <td>최재훈</td>
-        <td>
-          <input type="text" class="amt-input" id="a_14" value="" placeholder="0" oninput="onAmt(14)" onfocus="this.select()">
-        </td>
-        <td style="text-align:center">
-          <input type="checkbox" class="chk-send" id="c2_14" onchange="onChk2(14)">
-        </td>
-      </tr>
-      <tr>
-        <td><strong>삼원에프에이</strong></td>
-        <td>미정</td>
-        <td>
-          <input type="text" class="amt-input" id="a_15" value="" placeholder="0" oninput="onAmt(15)" onfocus="this.select()">
-        </td>
-        <td style="text-align:center">
-          <input type="checkbox" class="chk-send" id="c2_15" onchange="onChk2(15)">
-        </td>
-      </tr>
-      <tr>
-        <td><strong>성헌</strong></td>
-        <td>이성웅</td>
-        <td>
-          <input type="text" class="amt-input" id="a_16" value="" placeholder="0" oninput="onAmt(16)" onfocus="this.select()">
-        </td>
-        <td style="text-align:center">
-          <input type="checkbox" class="chk-send" id="c2_16" onchange="onChk2(16)">
-        </td>
-      </tr>
-      <tr>
-        <td><strong>알파테크</strong></td>
-        <td>이희주</td>
-        <td>
-          <input type="text" class="amt-input" id="a_17" value="" placeholder="0" oninput="onAmt(17)" onfocus="this.select()">
-        </td>
-        <td style="text-align:center">
-          <input type="checkbox" class="chk-send" id="c2_17" onchange="onChk2(17)">
-        </td>
-      </tr>
-      <tr>
-        <td><strong>에이치비모션</strong></td>
-        <td>이순일</td>
-        <td>
-          <input type="text" class="amt-input" id="a_18" value="" placeholder="0" oninput="onAmt(18)" onfocus="this.select()">
-        </td>
-        <td style="text-align:center">
-          <input type="checkbox" class="chk-send" id="c2_18" onchange="onChk2(18)">
-        </td>
-      </tr>
-      <tr>
-        <td><strong>영광테크</strong></td>
-        <td>이정은</td>
-        <td>
-          <input type="text" class="amt-input" id="a_19" value="" placeholder="0" oninput="onAmt(19)" onfocus="this.select()">
-        </td>
-        <td style="text-align:center">
-          <input type="checkbox" class="chk-send" id="c2_19" onchange="onChk2(19)">
-        </td>
-      </tr>
-      <tr>
-        <td><strong>우일산업</strong></td>
-        <td>안정현</td>
-        <td>
-          <input type="text" class="amt-input" id="a_20" value="" placeholder="0" oninput="onAmt(20)" onfocus="this.select()">
-        </td>
-        <td style="text-align:center">
-          <input type="checkbox" class="chk-send" id="c2_20" onchange="onChk2(20)">
-        </td>
-      </tr>
-      <tr>
-        <td><strong>원솔루션</strong></td>
-        <td>조원제</td>
-        <td>
-          <input type="text" class="amt-input" id="a_21" value="" placeholder="0" oninput="onAmt(21)" onfocus="this.select()">
-        </td>
-        <td style="text-align:center">
-          <input type="checkbox" class="chk-send" id="c2_21" onchange="onChk2(21)">
-        </td>
-      </tr>
-      <tr>
-        <td><strong>유진특수베어링</strong></td>
-        <td>유춘혁</td>
-        <td>
-          <input type="text" class="amt-input" id="a_22" value="" placeholder="0" oninput="onAmt(22)" onfocus="this.select()">
-        </td>
-        <td style="text-align:center">
-          <input type="checkbox" class="chk-send" id="c2_22" onchange="onChk2(22)">
-        </td>
-      </tr>
-      <tr>
-        <td><strong>이비시스템</strong></td>
-        <td>윤민정</td>
-        <td>
-          <input type="text" class="amt-input" id="a_23" value="" placeholder="0" oninput="onAmt(23)" onfocus="this.select()">
-        </td>
-        <td style="text-align:center">
-          <input type="checkbox" class="chk-send" id="c2_23" onchange="onChk2(23)">
-        </td>
-      </tr>
-      <tr>
-        <td><strong>티에스코리아</strong></td>
-        <td>백선희</td>
-        <td>
-          <input type="text" class="amt-input" id="a_24" value="" placeholder="0" oninput="onAmt(24)" onfocus="this.select()">
-        </td>
-        <td style="text-align:center">
-          <input type="checkbox" class="chk-send" id="c2_24" onchange="onChk2(24)">
-        </td>
-      </tr>
-      <tr>
-        <td><strong>한국엔에스케이</strong></td>
-        <td>오경민</td>
-        <td>
-          <input type="text" class="amt-input" id="a_25" value="" placeholder="0" oninput="onAmt(25)" onfocus="this.select()">
-        </td>
-        <td style="text-align:center">
-          <input type="checkbox" class="chk-send" id="c2_25" onchange="onChk2(25)">
-        </td>
-      </tr>
-      <tr>
-        <td><strong>한신체인</strong></td>
-        <td>한상운</td>
-        <td>
-          <input type="text" class="amt-input" id="a_26" value="" placeholder="0" oninput="onAmt(26)" onfocus="this.select()">
-        </td>
-        <td style="text-align:center">
-          <input type="checkbox" class="chk-send" id="c2_26" onchange="onChk2(26)">
-        </td>
-      </tr>
-      <tr>
-        <td><strong>정지원</strong></td>
-        <td>정지원</td>
-        <td>
-          <input type="text" class="amt-input" id="a_27" value="" placeholder="0" oninput="onAmt(27)" onfocus="this.select()">
-        </td>
-        <td style="text-align:center">
-          <input type="checkbox" class="chk-send" id="c2_27" onchange="onChk2(27)">
-        </td>
-      </tr>
-      <tr>
-        <td><strong>test</strong></td>
-        <td>test</td>
-        <td>
-          <input type="text" class="amt-input" id="a_28" value="" placeholder="0" oninput="onAmt(28)" onfocus="this.select()">
-        </td>
-        <td style="text-align:center">
-          <input type="checkbox" class="chk-send" id="c2_28" onchange="onChk2(28)">
-        </td>
-      </tr></tbody>
+          <tbody id="tbody2"></tbody>
           <tfoot>
             <tr>
               <td colspan="2">합계</td>
               <td id="footTotal">0 원</td>
-              <td id="footCount" style="text-align:center">0개</td>
+              <td id="footCount" style="text-align:center">─</td>
             </tr>
           </tfoot>
         </table>
@@ -1467,62 +895,9 @@ body {
 
       <div class="mail-preview" style="margin-top:16px">
         <div class="preview-hd">메일 미리보기</div>
-        <div class="mail-subject" id="prev2Sub">[5월 마감] 계산서 발행 요청 - 코윈테크</div>
-        <div class="mail-body" id="prev2Body">수신: 수신자 제위
-
-안녕하세요
-코윈테크 구매팀 박천오 입니다.
-
-5월 마감 금액 확인 요청드리오니, 일치 시 계산서 일괄 발행부탁드립니다.
-불일치 시 연락부탁드립니다.
-마감 금액 : 0 원 (공급가액 기준)
-발행 일자 : (미입력)
-발행 주소 : bill@cowintech.com
-대금 지급 예정일 : (미입력)
-
-감사합니다.
-박천오 드림</div>
-        <div id="prev2Sig"><div class="sig-preview-area"><table cellpadding="0" cellspacing="0" border="0" style="font-family:&#39;Malgun Gothic&#39;,Arial,sans-serif;font-size:12px;color:#444;
-         margin-top:20px;padding-top:16px;border-top:2px solid #1a237e;
-         width:100%;max-width:520px;">
-  <tbody><tr><td>
-    <div style="font-size:15px;font-weight:700;color:#1a237e;margin-bottom:3px;letter-spacing:-0.2px;">
-      박천오 / Cheonoh Park
-    </div>
-    <div style="font-size:12px;color:#666;margin-bottom:14px;">구매팀 / 선임</div>
-    <table cellpadding="0" cellspacing="0" border="0" style="font-size:12px;color:#444;border-collapse:collapse;line-height:2.1;">
-      <tbody><tr>
-        <td style="color:#999;padding-right:12px;font-weight:600;width:20px;white-space:nowrap;">M.</td>
-        <td>010-3551-2643</td>
-      </tr>
-      <tr>
-        <td style="color:#999;padding-right:12px;font-weight:600;">T.</td>
-        <td>070-4944-3029</td>
-      </tr>
-      <tr>
-        <td style="color:#999;padding-right:12px;font-weight:600;">F.</td>
-        <td>041-547-2132</td>
-      </tr>
-      <tr>
-        <td style="color:#999;padding-right:12px;font-weight:600;vertical-align:top;">A.</td>
-        <td>충남 아산시 둔포면 아산밸리로 285</td>
-      </tr>
-      <tr>
-        <td style="color:#999;padding-right:12px;font-weight:600;">H.</td>
-        <td><a href="http://www.cowintech.com/" style="color:#1a237e;text-decoration:none;font-weight:500;">www.cowintech.com</a></td>
-      </tr>
-    </tbody></table>
-    <div style="margin-top:14px;">
-      <span style="display:inline-block;background:#1a237e;color:#fff;padding:4px 11px;
-                   border-radius:3px;font-size:11px;font-weight:700;letter-spacing:0.8px;">
-        COWIN TECH
-      </span>
-      <span style="font-size:11px;color:#888;margin-left:8px;">
-        Smart Factory System | Cowork + Win Win
-      </span>
-    </div>
-  </td></tr>
-</tbody></table></div></div>
+        <div class="mail-subject" id="prev2Sub">─</div>
+        <div class="mail-body"    id="prev2Body">─</div>
+        <div id="prev2Sig"></div>
       </div>
 
       <div class="send-bar" style="margin-top:14px">
@@ -1577,10 +952,10 @@ body {
       <div class="add-vendor-section">
         <div class="add-vendor-label">+ 새 거래처 추가</div>
         <div class="add-vendor-form">
-          <input class="add-input" id="addName" type="text" placeholder="거래처명 *">
+          <input class="add-input" id="addName"    type="text" placeholder="거래처명 *">
           <input class="add-input" id="addContact" type="text" placeholder="담당자">
-          <input class="add-input" id="addEmail" type="text" placeholder="이메일 *">
-          <input class="add-input" id="addPhone" type="text" placeholder="전화번호">
+          <input class="add-input" id="addEmail"   type="text" placeholder="이메일 *">
+          <input class="add-input" id="addPhone"   type="text" placeholder="전화번호">
           <button class="btn-add btn-add-full" onclick="addVendor()">추가</button>
         </div>
       </div>
@@ -1613,7 +988,7 @@ body {
       <div style="font-size:12px;color:#757575;font-weight:600;margin-bottom:6px;">본문</div>
       <div id="autoBody" style="background:#fff;border:1px solid #e0e0e0;border-radius:6px;padding:10px 12px;font-size:13px;white-space:pre-line;line-height:1.75;color:#333;max-height:220px;overflow-y:auto;"></div>
       <div style="margin-top:12px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px;">
-        <span style="font-size:11px;color:#e65100;font-weight:500;">⚡ Claude in Chrome이 그룹웨어 창에 위 내용을 자동 입력합니다. 보내기 버튼은 한 번만 클릭하세요. 발송 중 레이어가 사라지지 않아도 발송은 완료된 것입니다.</span>
+        <span style="font-size:11px;color:#e65100;font-weight:500;">⚡ Claude in Chrome이 그룹웨어 창에 위 내용을 자동 입력합니다</span>
         <button class="btn btn-solid" id="btnNext" onclick="nextVendor()">다음 거래처로 →</button>
       </div>
     </div>
@@ -1627,7 +1002,7 @@ body {
 <div class="modal-bg" id="pvModalBg">
   <div class="modal">
     <div class="modal-title" id="pvTitle">메일 발송 확인</div>
-    <div class="modal-desc" id="pvDesc"></div>
+    <div class="modal-desc"  id="pvDesc"></div>
     <div style="background:#f4f6ff;border:1.5px solid #c5cae9;border-radius:8px;padding:12px 14px;margin-bottom:12px;font-size:13px;line-height:2;">
       <div><span style="color:#757575;font-weight:600;display:inline-block;min-width:64px;">받는 사람</span><span id="pvTo"></span></div>
       <div><span style="color:#757575;font-weight:600;display:inline-block;min-width:64px;">제목</span><strong id="pvSubject" style="color:#1a237e;"></strong></div>
@@ -1637,8 +1012,8 @@ body {
     </div>
     <div class="modal-actions">
       <button class="btn btn-danger" onclick="cancelSend()">전체 취소</button>
-      <button class="btn btn-ghost" onclick="skipVendor()">건너뛰기</button>
-      <button class="btn btn-solid" onclick="proceedVendor()">그룹웨어 열기</button>
+      <button class="btn btn-ghost"  onclick="skipVendor()">건너뛰기</button>
+      <button class="btn btn-solid"  onclick="proceedVendor()">그룹웨어 열기</button>
     </div>
   </div>
 </div>
@@ -1647,7 +1022,7 @@ body {
 <div class="modal-bg" id="modalBg">
   <div class="modal">
     <div class="modal-title" id="mTitle">발송 확인</div>
-    <div class="modal-desc" id="mDesc"></div>
+    <div class="modal-desc"  id="mDesc"></div>
     <div class="popup-notice">
       🤖&nbsp; <strong>Claude in Chrome</strong>이 그룹웨어 창을 열고 받는 사람·제목·본문을 자동 입력 후 발송합니다. 브라우저 <strong>팝업 허용</strong>이 필요합니다.
     </div>
@@ -2186,14 +1561,17 @@ function proceedVendor() {
 
   document.getElementById('autoTo').textContent      = v.email;
   document.getElementById('autoSubject').textContent = m.subject;
-  document.getElementById('autoBody').innerHTML      = m.bodyHtml;
+  document.getElementById('autoBody').textContent    = m.bodyText;
   document.getElementById('btnNext').textContent     = cur < total ? `다음 거래처로 → [${cur + 1}/${total}]` : '✅ 발송 완료';
   document.getElementById('autoInfoPanel').style.display = 'block';
   document.getElementById('autoInfoPanel').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
 
-  // 같은 탭에서 열기 (MCP 연결 유지)
-  window.location.href = GW;
-  addLog(`<span class="log-ok">✅ [${cur}/${total}] ${esc(v.name)} (${v.email}) — 그룹웨어 이동</span>`);
+  const win = window.open(GW, `gw_${sendIdx}`, 'width=960,height=700,scrollbars=yes,resizable=yes');
+  if (win) {
+    addLog(`<span class="log-ok">✅ [${cur}/${total}] ${esc(v.name)} (${v.email}) — 그룹웨어 창 열림</span>`);
+  } else {
+    addLog(`<span class="log-warn">⚠ [${cur}/${total}] ${esc(v.name)} — 팝업 차단됨. 주소창 우측 팝업 허용 후 재시도하세요.</span>`);
+  }
 }
 
 function nextVendor() {
@@ -2243,6 +1621,5 @@ function toast(msg) {
   setTimeout(() => el.remove(), 3000);
 }
 </script>
-
-
-</body></html>
+</body>
+</html>
